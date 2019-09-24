@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>복수는 식혀서 먹어야 맛있는 음식과 같다.</title>
+	<style type="text/css">
+	body{background-color: yellow}
+	#villain{width: 1400px}	
+	#villain2{width: 300px; position: absolute;top: 100px; left: 200px}
+	#villain3{width: 300px; position: absolute;top: 250px; right: 100px}
+	#eye{position: absolute;top: 450px; left: 100px}
+	#next{width:200px; position: absolute;top: 500px; right: 400px}
+
+	#killbill{ opacity: 0}
+	#killbill2{width: 700px; position: absolute; top: 200px; left: 400px; opacity: 0}
+	#car{width: 200px; position: absolute;top: 550px; right: 100px; opacity: 0}
+	#dancer{ position: absolute;top: 300px; left: 10px; opacity: 0}
+	#pulp{width:200px; position: absolute;top: 50px;right: 100px;opacity: 0}
+
+	</style>
+</head>
+<body id="mybody">
+	<audio controls id="song1" autoplay>
+        <source src="song1.mp3" type="audio/mpeg">
+    </audio>
+
+	<img src="villain.gif" id="villain">
+	<img src="villain2.gif" id="villain2">
+	<img src="villain3.gif" id="villain3">
+	<img src="eye.gif" id="eye">
+	<img src="next.gif" id="next">
+
+	<img src="killbill.gif" id="killbill">
+	<img src="killbill2.gif" id="killbill2">
+	<img src="car.gif" id="car">
+	<img src="dancer.gif" id="dancer">
+	<img src="pulp.gif" id="pulp">
+
+	<audio id="song2" loop>
+  		<source src="song2.mp3" type="audio/mpeg">
+	</audio>
+
+	<script type="text/javascript">
+		next.onclick = function(){
+			song1.pause();
+			song2.play();
+			next.style.opacity = "0";
+			villain.style.opacity = "0";
+			villain2.style.opacity = "0";
+			villain3.style.opacity = "0";
+			eye.style.opacity = "0";
+			mybody.style.background = "url(killbill.gif)";
+			mybody.style.backgroundsize = "500px auto";
+			killbill2.style.opacity = "1";
+			car.style.opacity = "1";
+			dancer.style.opacity = "1"
+			pulp.style.opacity="1"
+		}
+	</script>
+
+</body>
+</html>
